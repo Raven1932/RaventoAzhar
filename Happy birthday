@@ -1,0 +1,96 @@
+---
+title: "عيد ميلاد سعيد"
+---
+
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>عيد ميلاد سعيد</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Scheherazade+New&display=swap" rel="stylesheet"/>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        font-family: 'Scheherazade New', serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+        background: linear-gradient(45deg, #000000, #333333);
+        background-size: 400% 400%;
+        animation: gradient 20s ease infinite;
+        color: #f8f5f0;
+      }
+
+      @keyframes gradient {
+        0% {background-position: 0% 50%;}
+        50% {background-position: 100% 50%;}
+        100% {background-position: 0% 50%;}
+      }
+
+      h1, .message, .poem, .signature {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: appear 1s forwards;
+      }
+
+      h1 { font-family: 'Amiri', serif; font-size: 40px; color: #b03a2e; animation-delay: 0.2s; }
+      .message { font-size: 20px; max-width: 600px; margin: 20px auto; animation-delay: 0.8s; }
+      .poem { font-size: 22px; line-height: 2; margin: 40px auto; max-width: 600px; background: rgba(0,0,0,0.3); padding: 20px; border-radius: 12px; animation-delay: 1.5s; }
+      .signature { margin-top: 30px; font-style: italic; font-size: 18px; color: #7d3c98; animation-delay: 2.2s; }
+
+      @keyframes appear {
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      .music { margin-top: 40px; }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h1>كل عام وأنتِ بخير بربوگ</h1>
+
+      <div class="message">
+        بما أن الطرق بعيد، والمسافات بعيدة، وكل تلك الحواجز بيننا، هذه الطريقة الوحيدة للوصول إليكِ، وكما تعلمين لا أُجيد الكلام الجميل، ولا أُجيد شيئًا آخر سوى الشعر والموسيقى، لذا كتبت لكِ قصيدةً بسيطة، ومقطوعةٌ صغيرة من الموسيقى الكلاسيكية.
+      </div>
+
+      <div class="poem">
+        يشيخ الزهر إن يكبر<br>
+        وانتِ زهرةٌ تصغر<br><br>
+
+        وإن مرت على جذعكْ<br>
+        سنينٌ، تصغري أكثر<br><br>
+
+        وهذا اليوم قد زدتي<br>
+        جمالًا فوق ذا المنظر<br><br>
+
+        ودزتي الحسن أحمالاً<br>
+        وزدتي وجهكِ المخمَّر<br><br>
+
+        ففي ذا اليوم إشراقٌ<br>
+        ولدتي للسنا جوهر<br><br>
+
+        وهل للشمسِ مطلعكِ؟<br>
+        وأنتِ النور بل أنوَّر<br><br>
+
+        فلا شمسٌ ولا قمرٌ<br>
+        سناءٌ، خدكِ الأحمر
+      </div>
+
+      <div class="signature">
+        "ريڤن إلى أزهار"
+      </div>
+
+      <div class="music">
+        <h2>🎶 Tchaikovsky - Waltz of the Flowers</h2>
+        <audio controls autoplay loop>
+          <source src="https://www.orangefreesounds.com/wp-content/uploads/2018/04/Waltz-of-the-flowers.mp3" type="audio/mpeg">
+          متصفحك لا يدعم تشغيل الصوت.
+        </audio>
+      </div>
+    </div>
+  </body>
+</html>
